@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: #e72020;
+    justify-content: flex-end;
+}
+
+.menu {
+    display: flex;
+    width: 550px;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu a{
+    list-style: none;
+    text-decoration: none;
+    padding-right: 30px;
+    padding-left: 30px;
+    color: #ffffff;
+    font-family: cursive;
+}
+
+.banner {
+    display: flex;
+    height: calc(100vh - 70px);
+    background-image: url('imagens/background.png');
+    background-size: cover;
+}
+
+.banner .section-body {
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(19, 192, 36, 0.75);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ApresentacaoImg img{
+    width: 453px;
+    height: 565px;
+}
+
+.ApresentacaoTxt h1 {
+    font-size: 80px;
+    color: #ffffff;
+    font-family: cursive;
+}
+
+.Descricao {
+    display: flex;
+    background-color: #EBEBEB;
+}
+
+.Descricao .section-body {
+    display: flex;
+    max-width: 850px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.Descricao .section-body p {
+    font-size: 20px;
+}
+
+.Jogos {
+    background-color: #0001FC;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-body-jogos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 960px;
+    margin: auto;
+}
+
+.section-body-jogos .section-title h1 {
+    color: #ffffff;
+    font-family: cursive;
+    padding-bottom: 20px;
+    padding-left: 40px;
+}
+
+.section-content .cards {
+    max-width: 960px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.card h1 {
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.card p {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Jogos img {
+    width: 230px;
+    height: 240px;
+    margin-top: 10px;
+}
+
+.Criador {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #EBEBEB;
+}
+
+.section-body-criador {
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    margin: auto;
+    padding-left: 40px;
+}
+
+.section-body-criador .section-content-criador {
+    display: flex;
+}
+
+.section-body-criador .section-title {
+    padding-bottom: 20px;
+    color: #0001FC;
+    font-family: cursive;
+}
+
+.section-content-criador .ApresentacaoTxt {
+    max-width: 450px;
+}
+
+.section-content-criador .ApresentacaoTxt p {
+    padding-bottom: 20px;
+}
+
+.section-content-criador .ApresentacaoImg {
+    margin-left: 50px;
+}
+
+.section-content-criador .ApresentacaoImg img {
+    border-radius: 50%;
+    width: 340px;
+    height: 350px;
+}
+
+.Jogue {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-body-jogue {
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    margin: auto;
+    padding-left: 40px;
+}
+
+.section-body-jogue .section-title {
+    color: #e72020;
+    font-family: cursive;
+    padding-bottom: 20px;
+}
+
+.section-body-jogue .section-content-jogue {
+    display: flex;
+}
+
+.section-body-jogue .ApresentacaoImg img {
+    width: 412px;
+    height: 412px;
+}
+
+.section-content-jogue .ApresentacaoTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 450px;
+    height: 312px;
+    margin-left: 50px;
+}
+
+.ApresentacaoTxt button {
+    max-width: 400px;
+    font-size: 30px;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #e72020;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+footer {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #EBEBEB;
+}
+
+.section-body-footer {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+@media only screen and (max-width: 1020px) {
+    .banner .ApresentacaoTxt h1 {
+        font-size: 70px;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .banner .ApresentacaoTxt {
+        max-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .section-content .cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards .card {
+        margin-bottom: 10px;
+    }
+
+    .section-body-criador {
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-content-criador {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-content-jogue {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-content-jogue .ApresentacaoTxt p {
+        margin-top: 10px;
+    }
+
+}
